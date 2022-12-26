@@ -5,7 +5,7 @@
 
 \setlength{\parindent}{0pt}
 
-\newcommand{\sidesep}{
+\newcommand{\separator}{
   \vspace{1cm}
 }
 
@@ -19,13 +19,9 @@
   \par
 }
 
-\newenvironment{event}{
-  \begin{tabular}{r|p{.5\textwidth}}
-    }{
-  \end{tabular}
-}
-
-\newcommand{\eventitem}[3]{
-  #1 & \textbf{#2}\newline{#3} \\
+\newcommand{\event}[3]{
+  \textbf{#1}\hfill#2 \\
+  #3
+  \par\separator
 }
 
