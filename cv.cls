@@ -18,3 +18,14 @@
   {#1: #2}
   \par
 }
+
+\newenvironment{event}{
+  \begin{tabular}{r|p{.5\textwidth}}
+    }{
+  \end{tabular}
+}
+
+\newcommand{\eventitem}[3]{
+  #1 & \textbf{#2}\newline{#3} \\
+}
+
