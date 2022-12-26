@@ -22,6 +22,6 @@
 \newcommand{\event}[3]{
   \textbf{#1}\hfill#2 \\
   #3
-  \par\separator
+  \par
 }
 
