@@ -1,0 +1,66 @@
+\documentclass{cv}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[finnish]{babel}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{paracol} 
+\usepackage{lipsum} 
+
+\usepackage[margin=.5cm]{geometry}
+
+\pagestyle{empty}
+
+
+\begin{document}
+
+
+\columnratio{0.3}
+\backgroundcolor{c[0](.5cm, .5cm)(0cm, \textheight)}[rgb]{.7,.7,.7}
+
+
+\begin{paracol}{2}
+  % SIDEBAR
+
+  \framebox{\Huge{Image}}
+
+  \sidesep
+
+  \begin{tabular}{cl}
+    x & 20.8.2001 \\
+    x & 044 336 5547 \\
+    x & elias.lehtinen01@gmail.com \\
+    x & elias.lehtinen01@gmail.com \\
+    x & \href{https://www.github.com/elehtine}{elehtine} \\
+  \end{tabular}
+
+  \sidesep
+
+  \skilllang{Suomi}{Äidinkieli}
+  \skilllang{Englanti}{B2}
+
+  \switchcolumn
+
+
+  % MAIN
+
+  \name{Elias Lehtinen}
+
+  \section*{Työkokemus}
+  \begin{tabular}{r|l}
+    2022-2022 & Suomen Puolustusvoimat \\
+    2020-2021 & Muisoft \\
+  \end{tabular}
+
+  \section*{Opinnot}
+  \begin{tabular}{r|l}
+    2019-2022 & Tietojenkäsittelytiede \\
+    2017-2019 & Päivölän matematiikkalinja \\
+  \end{tabular}
+\end{paracol}
+
+\end{document}
+
