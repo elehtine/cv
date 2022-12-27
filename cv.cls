@@ -15,7 +15,11 @@
 }
 
 \newcommand{\skilllang}[2]{
-  {#1: #2}
+  #1: #2
+  \par
+}
+\newcommand{\skillprogramming}[2]{
+  #1: #2
   \par
 }
 
