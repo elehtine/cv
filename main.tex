@@ -6,7 +6,6 @@
 \usepackage[finnish]{babel}
 
 \usepackage{xcolor}
-\usepackage{hyperref}
 \usepackage{paracol} 
 \usepackage{lipsum} 
 
@@ -30,21 +29,24 @@
   \separator
 
   \begin{tabular}{cl}
-    x & 20.8.2001 \\
-    x & 00560 Helsinki \\
-    x & elias.lehtinen01@gmail.com \\
-    x & 044 336 5547 \\
-    x & \href{https://www.github.com/elehtine}{elehtine} \\
+    \birthday{20.8.2001}
+    \location{00560 Helsinki}
+    \email{elias.lehtinen01@gmail.com}
+    \phone{044 336 5547}
+    \github{elehtine}
+    \linkedin{elias-lehtinen-236556181}
   \end{tabular}
 
   \separator
 
-  \skilllang{Suomi}{Äidinkieli}
-  \skilllang{Englanti}{B2}
+  \begin{tabular}{ll}
+    \skilllang{Suomi}{Äidinkieli}
+    \skilllang{Englanti}{B2}
+  \end{tabular}
 
   \separator
 
-  \section*{Kuvaus teknologioista}
+  \section*{Käytetyimmät teknologiat}
 
   \skillprogramming{Java}{Spring}
   \skillprogramming{C++}{Qt, Boost, CMake}
