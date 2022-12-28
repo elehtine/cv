@@ -5,7 +5,12 @@
 
 \RequirePackage{fontawesome}
 \RequirePackage{hyperref}
+\RequirePackage{xcolor}
+\RequirePackage{dashrule}
 
+
+\definecolor{lightgray}{RGB}{211, 211, 211}
+\definecolor{gray}{RGB}{105, 105, 105}
 
 \setlength{\parindent}{0pt}
 
@@ -46,8 +51,8 @@
 }
 
 \newcommand{\event}[3]{
-  \textbf{#1}\hfill#2 \\
-  #3
-  \par
+  \textbf{#1}\hfill\par
+  \textcolor{gray}{#2}\par\vspace{1ex}
+  #3\par
 }
 
