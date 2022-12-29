@@ -53,8 +53,8 @@
   #1: & #2 \\
 }
 \newcommand{\skillprogramming}[2]{
-  #1: #2
-  \par
+  \subsection*{#1}
+  #2
 }
 
 \newcommand{\event}[3]{
