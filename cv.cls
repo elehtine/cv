@@ -7,6 +7,8 @@
 \RequirePackage{hyperref}
 \RequirePackage{xcolor}
 \RequirePackage{dashrule}
+\RequirePackage{relsize}
+\RequirePackage{xspace}
 
 
 \definecolor{lightgray}{RGB}{211, 211, 211}
@@ -14,8 +16,13 @@
 
 \setlength{\parindent}{0pt}
 
+
+\newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
+\newcommand{\Cpp}{\mbox{C\Rplus\Rplus}\xspace}
+
+
 \newcommand{\separator}{
-  \vspace{1cm}
+  \vspace{3ex}
 }
 
 \newcommand{\namefont}{\huge\bfseries}
