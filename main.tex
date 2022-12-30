@@ -1,4 +1,4 @@
-\documentclass{cv}
+\documentclass[finnish]{cv}
 
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -15,74 +15,34 @@
 
 \begin{document}
 
-
 \columnratio{0.3}
 \backgroundcolor{c[0](.5cm, .5cm)(0cm, \textheight)}{lightgray}
 
 
 \begin{paracol}{2}
-  % SIDEBAR
 
-  \framebox{\Huge{Image}}
-
-  \separator
-
-  \begin{tabular}{cl}
-    \birthday{20.8.2001}
-    \location{00560 Helsinki}
-    \email{elias.lehtinen01@gmail.com}
-    \phone{044 336 5547}
-    \github{elehtine}
-    \linkedin{elias-lehtinen-236556181}
-  \end{tabular}
-
-  \separator
-
-  \begin{tabular}{ll}
-    \skilllang{Suomi}{Äidinkieli}
-    \skilllang{Englanti}{B2}
-  \end{tabular}
-
-  \separator
-
-  \section*{Teknologiat}
-
-  \skillprogramming{\Cpp}{
-    Qt, Boost, \\
-    CMake, Make, Bazel
+  \finnish{
+    \input{sidebar-fi}
   }
-  \skillprogramming{Python}{Fast API, Flask}
-  \skillprogramming{JavaScript/TypeScript}{
-    Node, Express, \\
-    React, Svelte \\
-    npm, Yarn
+  \english{
+    \input{sidebar-en}
   }
-  \skillprogramming{Data-analyysi}{
-    NumPy, pandas, SciPy, \\
-    scikit-learn, TensorFlow, \\
-    Matplotlib, seaborn, \\
-    SpaCy, NLTK, \\
-    statsmodels, \\
-    R (ohjelmointikieli)
-  }
-  \skillprogramming{Golang}{Charmbracelet}
-  \skillprogramming{Java}{
-    Spring Framework, \\
-    Maven, Gradle
-  }
-
-  \switchcolumn
-
-
-  % MAIN
 
   \name{Elias Lehtinen}
 
-  \input{profile}
 
-  \input{work}
+  \finnish{
+    \input{profile-fi}
+    \input{work-fi}
+    \input{education-fi}
+  }
 
-  \input{education}
+  \english{
+    \input{profile-en}
+    \input{work-en}
+    \input{education-en}
+  }
+
 
 \end{paracol}
 

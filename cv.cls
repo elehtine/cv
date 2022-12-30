@@ -1,6 +1,14 @@
 \NeedsTeXFormat{LaTeX2e}
-
 \ProvidesClass{cv}
+
+\newif\if@english
+\newif\if@finnish
+
+\DeclareOption{finnish}{\@finnishtrue}
+\DeclareOption{english}{\@englishtrue}
+
+\ProcessOptions\relax
+
 \LoadClass{scrartcl}
 
 \RequirePackage{fontawesome}
@@ -19,6 +27,10 @@
 
 \newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
 \newcommand{\Cpp}{\mbox{C\Rplus\Rplus}\xspace}
+
+
+\newcommand{\english}[1]{\if@english#1\fi}
+\newcommand{\finnish}[1]{\if@finnish#1\fi}
 
 
 \newcommand{\separator}{
