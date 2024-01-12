@@ -9,6 +9,10 @@
 
 \ProcessOptions\relax
 
+\newcommand{\english}[1]{\if@english#1\fi}
+\newcommand{\finnish}[1]{\if@finnish#1\fi}
+
+
 \LoadClass{scrartcl}
 
 \RequirePackage{fontawesome}
@@ -17,6 +21,17 @@
 \RequirePackage{dashrule}
 \RequirePackage{relsize}
 \RequirePackage{xspace}
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{lmodern}
+\RequirePackage[T1]{fontenc}
+
+\finnish{
+  \RequirePackage[finnish]{babel}
+}
+\english{
+  \RequirePackage[english]{babel}
+}
 
 
 \definecolor{lightgray}{RGB}{211, 211, 211}
@@ -28,9 +43,6 @@
 \newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
 \newcommand{\Cpp}{\mbox{C\Rplus\Rplus}\xspace}
 
-
-\newcommand{\english}[1]{\if@english#1\fi}
-\newcommand{\finnish}[1]{\if@finnish#1\fi}
 
 
 \newcommand{\separator}{

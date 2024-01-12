@@ -1,10 +1,5 @@
 \documentclass[finnish]{cv}
 
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage[T1]{fontenc}
-\usepackage[finnish]{babel}
-
 \usepackage{paracol} 
 \usepackage{lipsum} 
 
@@ -21,30 +16,14 @@
 
 \begin{paracol}{2}
 
-  \finnish{
-    \input{sidebar-fi}
-  }
-  \english{
-    \input{sidebar-en}
-  }
+  \input{sidebar}
 
   \name{Elias Lehtinen}
 
-
-  \finnish{
-    \input{profile-fi}
-    \input{work-fi}
-    \input{education-fi}
-  }
-
-  \english{
-    \input{profile-en}
-    \input{work-en}
-    \input{education-en}
-  }
-
+  \input{profile}
+  \input{work}
+  \input{education}
 
 \end{paracol}
 
 \end{document}
-
