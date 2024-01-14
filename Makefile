@@ -1,5 +1,7 @@
 LATEXCMD = pdflatex -shell-escape -output-directory build
 
+.PHONY: all
+all: finnish english
 
 .PHONY: finnish
 finnish: | build
