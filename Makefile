@@ -3,6 +3,14 @@ LATEXCMD = pdflatex -shell-escape -output-directory build
 .PHONY: all
 all: finnish english
 
+.PHONY: help
+help:
+	@echo "Available commands are:"
+	@echo "all - create Finnish and English versions"
+	@echo "finnish - create Finnish version"
+	@echo "english - create English version"
+	@echo "clean - remove unnecessary build files"
+
 .PHONY: finnish
 finnish: | build
 	$(LATEXCMD) content/finnish.tex
