@@ -21,6 +21,9 @@
 \RequirePackage{dashrule}
 \RequirePackage{relsize}
 \RequirePackage{xspace}
+\RequirePackage{paracol}
+\RequirePackage[margin=.5cm]{geometry}
+
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{lmodern}

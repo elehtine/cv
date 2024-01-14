@@ -1,9 +1,15 @@
 LATEXCMD = pdflatex -shell-escape -output-directory build
 
-.PHONY: run
-run: | build
-	$(LATEXCMD) content/main.tex
-	cp build/main.pdf main.pdf
+
+.PHONY: finnish
+finnish: | build
+	$(LATEXCMD) content/finnish.tex
+	cp build/finnish.pdf finnish.pdf
+
+.PHONY: english
+english: | build
+	$(LATEXCMD) content/english.tex
+	cp build/english.pdf english.pdf
 
 build:
 	mkdir -p build
